@@ -1,0 +1,242 @@
+* {
+  font-family: 'Lemon', serif;
+  color: white;
+  background-color: rgb(10, 10, 10);
+}
+
+
+
+
+
+p {
+  margin: 0px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: inline;
+}
+
+h1 {
+  
+}
+
+.container1{
+  width:500px;
+  height:500px;
+  background-color: #ccc;
+  border-radius:50%;
+  border:15px solid #dde;
+  position: relative;
+  overflow: hidden;
+}
+.container1 div {
+  height:50%;
+  width:200px;
+  position: absolute;
+  clip-path: polygon(100% 0 , 50% 100% , 0 0 );
+  transform:translateX(-50%);
+  transform-origin:bottom;
+  text-align:center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size:20px;
+  font-weight:bold;
+  font-family:sans-serif;
+  color:#fff;
+  left:135px;
+}
+.container1 .one{
+  background-color: #3f51b5;
+  left:50%;
+}
+.container1 .two{
+  background-color: #ff9800;
+  transform: rotate(45deg);
+}
+.container1 .three{
+  background-color: #e91e63;
+  transform:rotate(90deg);
+}
+.container1 .four{
+  background-color: #4caf50;
+  transform: rotate(135deg);
+}
+.container1 .five{
+  background-color: #009688;
+  transform: rotate(180deg);
+}
+.container1 .six{
+  background-color: #795548;
+  transform: rotate(225deg);
+}
+.container1 .seven{
+  background-color: #9c27b0;
+  transform: rotate(270deg);
+}
+.container1 .eight{
+  background-color: #f44336;
+  transform: rotate(315deg);
+}
+
+
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+
+.movie-section img {
+  max-width: 200px;
+  max-height: 300px;
+  min-height: 300px;
+  margin: 20px;
+  display: inline;
+}
+
+.movie-section img:hover {
+  opacity: 0.3;
+}
+
+.brand-logo {
+  margin-right: 10px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+}
+
+.about {
+  padding: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.results img{
+  flex: 1 1 auto;
+  max-width: 75%;
+  height: auto
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+h3 {
+  text-align: right;
+}
+
+.listMov {
+  margin: 30px;
+  background-color: grey;
+  align-content: right;
+}
+
+
+
+
+
+
+
+
+
+
+/* Dropdown Menu*/
+.dropdown li {
+  display: block;
+  float: none;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: rgb(233, 30, 99) !important;
+  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown a {
+  display: block !important;
+  color: rgb(248, 244, 244);
+  background-color: rgba(233, 30, 99) !important;
+  
+  
+  text-decoration: none;
+  float: none;
+  
+}
+
+/* Change color of dropdown links on hover */
+.dropdown a:hover {
+  background-color: rgb(196, 28, 84) !important;
+}
+
+/* Show the dropdown menu on hover over the list item */
+.nav-wrapper .pink:hover .dropdown {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*history side*/
+body {
+  
+  font-family: 'Lemon', serif;
+  color: white;
+  background-color: rgb(10, 10, 10);
+}
+
+h1 {
+  color: white;
+  margin-top: 15px;
+  text-align: center;
+  background-color: rgb(10, 10, 10);
+  
+}
+
+nav .nav-wrapper {
+  background-color: #e91e63;
+}
+
+.card-stacked  {
+  background-color: #e91e63
+}
+
+.waves-effect {
+  background-color: #e91e63;
+  color: white;
+}
+
+#searchHistory {
+  padding-top: 25px;
+}

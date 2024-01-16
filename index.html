@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>MovieMingle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+   <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen,projection"/>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/styles.css">
+  </head>
+
+<main>
+  <header>
+    <h1 class="brand-logo center">MovieMingle</h1>
+  </header>
+  <body>
+
+      <nav>
+        <div class="nav-wrapper pink darken-3">
+           <!-- Hamburger Icon for Mobile -->
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+           </a>  
+          <ul class="left hide-on-med-and-down">
+            <li class="pink darken-3" data-value="genres"><a href="#">Genres</a>
+              <!-- Dropdown Content -->
+              <ul class="dropdown">
+                  <li class="click" data-value="byGen/Action"><a href="#">Action</a></li>
+                  <li class="click" data-value="byGen/Adventure"><a href="#">Adventure</a></li>
+                  <li class="click" data-value="byGen/Comedy"><a href="#">Comedy</a></li>
+                  <li class="click" data-value="byGen/Crime"><a href="#">Crime</a></li>
+                  <li class="click" data-value="byGen/Drama"><a href="#">Drama</a></li>
+                  <li class="click" data-value="byGen/Fantasy"><a href="#">Fantasy</a></li>
+                  <li class="click" data-value="byGen/Family"><a href="#">Family</a></li>
+                  <li class="click" data-value="byGen/Horror"><a href="#">Horror</a></li>
+                  <li class="click" data-value="byGen/Mystery"><a href="#">Mystery</a></li>
+                  <li class="click" data-value="byGen/Romance"><a href="#">Romance</a></li>
+                  <li class="click" data-value="byGen/Sci-Fi"><a href="#">Sci-Fi</a></li>
+                  <li class="click" data-value="byGen/War"><a href="#">War</a></li>
+            
+              </ul>
+            <li class="pink darken-3 click" data-value="order/byPopularity"><a href="#">By Popularity</a></li>
+            <li class="pink darken-3 click" data-value="order/byRating"><a href="#">By Ratings</a></li>
+            <li class="pink darken-3"><a href="history.html">Search History</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!--Side Nav-->
+      <ul class="sidenav" id="mobile-nav">
+        <li class="pink darken-3"><a href="history.html">Search History</a></li>
+        <li class="pink darken-3 click" data-value="order/byPopularity"><a href="#">By Popularity</a></li>
+        <li class="pink darken-3 click" data-value="order/byRating"><a href="#">By Ratings</a></li>
+              <li class="pink darken-3 click" data-value="byGen/Action"><a href="#">Action</a></li>
+              <li class="pink darken-3 click" data-value="byGen/Adventure"><a href="#">Adventure</a></li>
+              <li class="pink darken-3 click" data-value="byGen/Comedy"><a href="#">Comedy</a></li>
+              <li class="pink darken-3 click" data-value="byGen/Crime"><a href="#">Crime</a></li>
+              <li class="pink darken-3 click" data-value="byGen/Drama"><a href="#">Drama</a></li>
+              <li class="pink darken-3 click" data-value="byGen/Fantasy"><a href="#">Fantasy</a></li>
+              <li class="pink darken-3 click" data-value="byGen/Family"><a href="#">Family</a></li>
+              <li class="pink darken-3 click" data-value="byGen/Horror"><a href="#">Horror</a></li>
+              <li class="pink darken-3 click" data-value="byGen/Mystery"><a href="#">Mystery</a></li>
+              <li class="pink darken-3 click" data-value="byGen/Romance"><a href="#">Romance</a></li>
+              <li class="pink darken-3 click" data-value="byGen/Sci-Fi"><a href="#">Sci-Fi</a></li>
+              <li class="pink darken-3 click" data-value="byGen/War"><a href="#">War</a></li>
+        
+          
+      </ul>
+
+
+      <div class="center about">
+        <p>Are you not sure what to watch? Let Movie Mingle help you decide.
+          Choose either a genre, or by top rated, or by most popular. Movie Mingle will give you
+        two random movies and the trailers. If you cant remember a previous search's results, check out the Search History</p>
+      </div>
+
+      <div class="center">
+        <ul class="randomMovies" id="randomMovies"></ul> 
+      </div>
+
+      <!--Modal For Movie Data-->
+      <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <h4 class="pink-text" id="movieTitle0">Heres Your Movie</h4>
+            <h5 class="center" id="movieInfo0">Details will go here...</h5>
+        </div>
+        
+        <div class="modal-content">
+          <h4 class="pink-text" id="movieTitle1">Heres Your Movie</h4>
+          <h5 class="center" id="movieInfo1">Details will go here...</h5>
+      </div>
+      <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+    </div>
+
+    
+
+
+      <div class="results">   
+        <img class="opp" src="Images/01_OPP_WEB_THEATERS_GENERIC_2000X800_KR_F01_060623-1200x627.jpg">
+      </div>
+
+
+      <div class="movie-section center-align">
+        <h4>Popular Movies</h4>
+        <a href="#"><img src="Images/opp.jpg" /></a>
+        <a href="#"><img src="Images/barbie.jpg" /></a>
+        <a href="#"><img src="Images/flower.jpg" /></a>
+        <a href="#"><img src="Images/gozilla.webp" /></a>
+        <a href="#"><img src="Images/freedom.jpg" /></a>
+
+        <h4>Critically Acclaimed Movies</h4>
+        <a href="#"><img src="Images/the-godfather.jpeg" /></a>
+        <a href="#"><img src="Images/kane.jpg" /></a>
+        <a href="#"><img src="Images/casa.jpg" /></a>
+        <a href="#"><img src="Images/12.jpg" /></a>
+        <a href="#"><img src="Images/shank.jpg"/></a>
+        
+        <h4>Action movies</h4>
+        <a href="#"><img src="Images/bill.jpg" /></a>
+        <a href="#"><img src="Images/die_hard.webp" /></a>
+        <a href="#"><img src="Images/boiled.jpg" /></a>
+        <a href="#"><img src="Images/matrix.jpg" /></a>
+        <a href="#"><img src="Images/term.jpg" /></a>
+        
+        <h4>Horror movies</h4>
+        <a href="#"><img src="Images/rosemarys-baby.jpg" /></a>
+        <a href="#"><img src="Images/conjuring.jpg" /></a>
+        <a href="#"><img src="Images/OIP.jpg" /></a>
+        <a href="#"><img src="Images/psycho.jpg" /></a>
+        <a href="#"><img src="Images/R.jpg" /></a>
+      </div>
+      
+    <div class="center-align">
+      <h3 class="">Click on the wheel to get a random movie!</h3>
+
+      <img id="wheel" class="center" src="Images/R.gif" alt="">
+    </div>
+
+      <br>
+      <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Conditions of Use</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2024 Copyright
+          <a class="grey-text text-lighten-4 right" href="#!"></a>
+          </div>
+        </div>
+      </footer>
+      <script src="./assets/script.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    </body>
+  </main>
+  
+</html>
